@@ -18,11 +18,11 @@ public class BasicMethods {
 			RestAssured.baseURI = "https://api.github.com";
 			File file=new File(".\\src\\main\\java\\rest_assured\\concepts\\payload.txt");
 
-			String bearerToken = "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";
+			String bearerToken = "ghp_1weIhbj1ITycYuk8y6r70wFL8v";
 
 			Response response = RestAssured.given()
 					.headers("Authorization", "Bearer " + bearerToken)
-				//	.auth().preemptive().basic("greensjenkins@gmail.com", "12345678")
+				//	.auth().preemptive().basic("")
 					
 					.body(file)
 					
@@ -41,7 +41,7 @@ public class BasicMethods {
 
 		RestAssured.baseURI = "https://api.github.com";
 
-		String bearerToken = "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";
+		String bearerToken = "ghp_1weIhbj1ITyc5Fk8y6r70wFL8v";
 
 		Response response = RestAssured
 				.given()
@@ -66,7 +66,7 @@ public class BasicMethods {
 
 		RestAssured.baseURI = "https://api.github.com";
 
-		String bearerToken = "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";
+		String bearerToken = "ghp_1weIhbj1I95uk8y6r70wFL8v";
 
 		Response response = RestAssured.given()
 				.headers("Authorization", "Bearer " + bearerToken, "Content-Type", ContentType.JSON, "Accept",
@@ -90,7 +90,7 @@ public class BasicMethods {
 
 		RestAssured.baseURI = "https://api.github.com";
 
-		String bearerToken = "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";
+		String bearerToken = "ghp_1weIhbj1IT95uk8y6r70wFL8v";
 
 		Response response = RestAssured.given()
 				.headers("Authorization", "Bearer " + bearerToken, "Content-Type", ContentType.JSON, "Accept",
